@@ -3,7 +3,7 @@
 A Chrome extension that detects [palindromes](https://en.wikipedia.org/wiki/Palindrome) on web pages.
 
 ## Installation
-1. Open Chrome and navigate to [chrome://extensions](https://github.com/Erfaniaa).
+1. Open Chrome and navigate to [chrome://extensions](chrome://extensions).
 2. Enable **Developer mode** (toggle in the top-right corner).
 3. Click **Load unpacked** and select the `noon/` project folder.
 
