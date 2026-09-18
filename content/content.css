@@ -66,3 +66,235 @@
 #palindrome-scrollbar-track .palindrome-marker:hover .marker-tooltip {
   display: block;
 }
+
+#noon-panel {
+  position: fixed;
+  top: 16px;
+  right: 18px;
+  width: 320px;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  border: 1px solid #3a3a50;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, sans-serif;
+  z-index: 2147483647;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+#noon-panel.hidden {
+  display: none;
+}
+
+#noon-panel .noon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: #23233a;
+  border-bottom: 1px solid #3a3a50;
+  border-radius: 10px 10px 0 0;
+}
+
+#noon-panel .noon-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff8c00;
+}
+
+#noon-panel .noon-actions {
+  display: flex;
+  gap: 6px;
+}
+
+#noon-panel .noon-icon-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid #3a3a50;
+  background: #2a2a3e;
+  color: #e0e0e0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+#noon-panel .noon-icon-btn.active {
+  border-color: #ff8c00;
+  color: #ff8c00;
+}
+
+#noon-panel .noon-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#noon-panel .noon-result {
+  padding: 10px 12px;
+  background: #2a2a3e;
+  border: 1px solid #3a3a50;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#noon-panel .noon-result.hidden {
+  display: none;
+}
+
+#noon-panel .noon-result span {
+  color: #ff8c00;
+  font-weight: 800;
+}
+
+#noon-panel .noon-group {
+  background: #2a2a3e;
+  border: 1px solid #3a3a50;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+#noon-panel .noon-label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #ddd;
+  font-weight: 600;
+}
+
+#noon-panel .noon-range-slider {
+  position: relative;
+  height: 28px;
+  margin-top: 4px;
+}
+
+#noon-panel .noon-range-track {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  right: 4px;
+  height: 6px;
+  background: #3a3a50;
+  border-radius: 6px;
+  transform: translateY(-50%);
+}
+
+#noon-panel .noon-range-slider input[type="range"] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  background: transparent;
+  pointer-events: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#noon-panel .noon-range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff8c00;
+  border: 2px solid #1a1a2e;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 2px 6px rgba(255, 140, 0, 0.3);
+}
+
+#noon-panel .noon-range-slider input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ff8c00;
+  border: 2px solid #1a1a2e;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 2px 6px rgba(255, 140, 0, 0.3);
+}
+
+#noon-panel .noon-range-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 6px;
+}
+
+#noon-panel .noon-actions-row {
+  display: flex;
+  gap: 8px;
+}
+
+#noon-panel .noon-btn {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #3a3a50;
+  background: #2a2a3e;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#noon-panel .noon-btn.primary {
+  background: linear-gradient(135deg, #ff8c00, #ff6000);
+  border: none;
+  color: #fff;
+}
+
+#noon-panel .noon-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#noon-panel .noon-input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #3a3a50;
+  background: #1f1f33;
+  color: #e0e0e0;
+  font-size: 12px;
+  outline: none;
+}
+
+#noon-panel .noon-input:focus {
+  border-color: #ff8c00;
+  box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.2);
+}
+
+#noon-panel .noon-status {
+  font-size: 11px;
+  color: #aaa;
+  margin-top: 6px;
+}
+
+#noon-fab {
+  position: fixed;
+  right: 18px;
+  bottom: 20px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid #3a3a50;
+  background: #1a1a2e;
+  color: #ff8c00;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 2147483647;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+#noon-fab.hidden {
+  display: none;
+}

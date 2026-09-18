@@ -13,13 +13,41 @@
     </div>
 
     <div class="setting-group">
-      <label class="setting-label" for="min-length">
-        Minimum length
+      <label class="setting-label">
+        Palindrome length range
       </label>
-      <div class="slider-row">
-        <input type="range" id="min-length" min="3" max="20" value="5" step="1">
-        <span id="min-length-value" class="slider-value">5</span>
+      <div class="range-slider" id="range-slider">
+        <div class="range-track" id="range-track"></div>
+        <input type="range" id="min-length" min="3" max="30" value="5" step="1">
+        <input type="range" id="max-length" min="3" max="30" value="30" step="1">
       </div>
+      <div class="range-values">
+        <span id="min-length-value">5</span>
+        <span id="max-length-value">30</span>
+      </div>
+    </div>
+
+    <div class="setting-group">
+      <label class="setting-label" for="pin-panel">
+        Pin panel
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="pin-panel">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="setting-group">
+      <label class="setting-label" for="sitemap-url">
+        sitemap.xml
+      </label>
+      <div class="sitemap-row">
+        <input type="url" id="sitemap-url" placeholder="https://example.com/sitemap.xml">
+      </div>
+      <button id="btn-sitemap" class="btn btn-secondary">
+        Scan sitemap
+      </button>
+      <div id="sitemap-status" class="status-text hidden"></div>
     </div>
 
     <div class="actions">
